@@ -3,6 +3,7 @@ Complex modifications for Karabiner-Elements
 
 For those working from home with Citrix remotely accessing Windows.
 
+citrix.json
 What you can do is the follwoign in your Ctirx Wokrspace sessions.
 1. To send PrintScreen by pressing "Command + Control + P".
 2. To send Alt by pressing "Option".

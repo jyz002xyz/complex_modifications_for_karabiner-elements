@@ -1,0 +1,280 @@
+{
+  "title": "Custom Keyboard for Citrix",
+  "rules": [
+    {
+      "description": "Control + Command + P = Print Screen for Citrix",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [ "command", "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "print_screen",
+              "modifiers": [ ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [ "command", "control", "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "print_screen",
+              "modifiers": ["right_alt"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right/Left Option = Alt for Citrix",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option",
+              "modifiers": [ "command", "fn" ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 136,
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "modifiers": [  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option",
+              "modifiers": [ "command", "fn" ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Enable Eisu and Kana for Citrix",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option",
+              "modifiers": [ "command", "fn" ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": 136,
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "modifiers": [  ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option",
+              "modifiers": [ "command", "fn" ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "japanese_kana",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [ "control", "shift" ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "japanese_eisuu",
+            "modifiers": {
+              "optional": [
+              ],
+              "mandatory": [
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [ "control" ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
